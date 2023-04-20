@@ -11,8 +11,6 @@
 *.user
 *.userosscache
 *.sln.docstates
-testKeyVault/appsettings.json,
-testKeyVault/appsettings.Development.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -534,3 +532,5 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,dotnetcore,aspnetcore
+/testKeyVault/appsettings.json
+/testKeyVault/appsettings.tmp.Development.json
