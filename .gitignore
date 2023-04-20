@@ -534,3 +534,4 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,dotnetcore,aspnetcore
 /testKeyVault/appsettings.json
 /testKeyVault/appsettings.tmp.Development.json
+/testKeyVault/appsettings.Development.json
