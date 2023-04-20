@@ -11,8 +11,11 @@ namespace testKeyVault
             // Add services to the container.
             builder.Services.AddRazorPages();
 
-            //var kvURL = builder.Configuration["KeyVaultConfig:URL"];
-            //builder.Configuration.AddAzureKeyVault(new Uri(kvURL), new DefaultAzureCredential());
+            if (builder.Environment.IsProduction())
+            {
+                var kvURL = builder.Configuration["KeyVaultConfig:URL"];
+                builder.Configuration.AddAzureKeyVault(new Uri(kvURL), new DefaultAzureCredential());
+            }
 
             var app = builder.Build();
 
